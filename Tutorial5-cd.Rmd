@@ -21,4 +21,12 @@ ggplot(covid_us, aes(x = date, y = confirmed))+
   facet_wrap(~id)
 ```
 
+```{r}
+covid_us %>% 
+  dplyr::filter(id  %in% unique(covid_us$id)[1:5]) %>%
+  ggplot(aes(x = date, y = confirmed)) + 
+  geom_line() +
+  facet_wrap(~id)
+```
+
 
