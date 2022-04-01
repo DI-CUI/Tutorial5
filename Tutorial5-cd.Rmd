@@ -6,7 +6,7 @@ output: bookdown::html_document2
 keep_md: true
 ---
 # library
-```{r library, message = false}
+```{r library, message = FALSE}
 library(tidyverse)
 library(COVID19)
 ```
